@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASIM SAQLAIN — Fragrance After Dark</title>
+  <meta name="description" content="Midnight Oud, Extrait de Parfum by ASIM SAQLAIN. Fragrance After Dark.">
+  <meta name="theme-color" content="#050505">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="header">
+    <a class="brand" href="#top">ASIM SAQLAIN</a>
+    <nav class="nav-main" aria-label="Primary">
+      <a href="#collection">The Collection</a>
+      <a href="#notes">Olfactory Notes</a>
+      <a href="#signature">Midnight Oud</a>
+    </nav>
+    <a class="pill" href="#signature">Discover</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <a href="#collection">The Collection</a>
+    <a href="#notes">Olfactory Notes</a>
+    <a href="#signature">Midnight Oud</a>
+    <a class="pill" href="#signature">Discover</a>
+  </div>
+
+  <main id="top">
+    <!-- Hero Scroll-Scrubbed Ritual Section -->
+    <section class="hero" id="hero" aria-label="The Midnight Oud ritual">
+      <div class="hero-sticky">
+        <video 
+          id="ritual" 
+          muted 
+          playsinline 
+          preload="auto" 
+          tabindex="-1" 
+          aria-hidden="true">
+          <source src="assets/video/asim-saqlain-ritual.mp4" type="video/mp4">
+        </video>
+        <div class="hero-vignette"></div>
+
+        <!-- Scene 1: Suspended Flacon & Cap Lifting (00:00 - 00:05) -->
+        <article class="scene l" data-start="0.03" data-end="0.20" style="--top:45%;--mw:380px">
+          <p class="eyebrow">Extrait de Parfum</p>
+          <h2>Night begins with a single note.</h2>
+          <p>Suspended in darkness, the flacon opens to release an intoxicating warm amber atmosphere.</p>
+        </article>
+
+        <!-- Scene 2: Planetary Notes Orbit (00:06 - 00:10) -->
+        <article class="scene r" data-start="0.23" data-end="0.40" style="--top:25%;--mw:380px">
+          <p class="eyebrow">The Awakening</p>
+          <h2>Every note rises.</h2>
+          <p>Dark damask rose, rare saffron threads, and wild agarwood orbit through warm light and shadow.</p>
+        </article>
+
+        <!-- Scene 3: Notes Transforming to Liquid Light (00:11 - 00:14) -->
+        <article class="scene l" data-start="0.43" data-end="0.60" style="--top:55%;--mw:380px">
+          <p class="eyebrow">The Composition</p>
+          <h2>Elements become liquid light.</h2>
+          <p>Raw botanical essences dissolve into a pure, luminous stream of concentrated perfume extract.</p>
+        </article>
+
+        <!-- Scene 4: Golden Stream Filling Flacon (00:15 - 00:18) -->
+        <article class="scene r" data-start="0.63" data-end="0.80" style="--top:35%;--mw:380px">
+          <p class="eyebrow">The Infusion</p>
+          <h2>Captured in glass.</h2>
+          <p>The smoky glass flacon fills from within, catching reflections across its hand-polished architectural facets.</p>
+        </article>
+
+        <!-- Scene 5: Ritual Hand Atomization (00:19 - 00:24) -->
+        <article class="scene l" data-start="0.83" data-end="0.96" style="--top:40%;--mw:400px">
+          <p class="eyebrow">The Ritual</p>
+          <h2>Wear the hour after dark.</h2>
+          <p>A fine atomization of smoked cedar, leather, and oud that lingers long after you leave.</p>
+        </article>
+
+        <div class="scroll-cue" id="cue">Scroll</div>
+        <div class="hero-exit" id="exit"></div>
+      </div>
+    </section>
+
+    <!-- Section 1: The Collection (3:4 Vertical Cards) -->
+    <section class="section" id="collection">
+      <header class="sec-head center">
+        <p class="eyebrow">The Collection</p>
+        <h2>Choose Your Essence</h2>
+        <p class="sub">Three distinct compositions created for three different hours of the evening.</p>
+      </header>
+      <div class="cards">
+        <article class="card" style="--rim:#B36A32">
+          <div class="card-img">
+            <img src="assets/products/product-dawn-veil.png" alt="Ruby Oud Eau de Parfum, ruby glass flacon" loading="lazy" width="1652" height="2200">
+          </div>
+          <div class="card-body">
+            <p class="eyebrow">Eau de Parfum</p>
+            <h3>Dawn Veil <em>Ruby Oud</em></h3>
+            <p>Damask rose petals and pink pepper settling into smoky ruby woods and dark amber.</p>
+            <p class="notes">Pink Pepper · Damask Rose · Ruby Wood</p>
+            <p class="tone">Burgundy shadow &amp; champagne gold</p>
+            <a class="link" href="#notes">Discover Essence <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="card" style="--rim:#8fa6c9">
+          <div class="card-img">
+            <img src="assets/products/product-amber-dusk.png" alt="Oceanic Edge Eau de Parfum, deep navy flacon" loading="lazy" width="1652" height="2200">
+          </div>
+          <div class="card-body">
+            <p class="eyebrow">Eau de Parfum</p>
+            <h3>Amber Dusk <em>Oceanic Edge</em></h3>
+            <p>Cold marine salt and crisp bergamot ozone grounded by dark navy cedar and ambergris.</p>
+            <p class="notes">Marine Salt · Bergamot · Dark Cedar</p>
+            <p class="tone">Deep navy &amp; polished silver</p>
+            <a class="link" href="#notes">Discover Essence <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="card" style="--rim:#B89155">
+          <div class="card-img">
+            <img src="assets/products/product-emerald-intense.png" alt="Emerald Intense Eau de Parfum, emerald flacon with gold collar" loading="lazy" width="1652" height="2200">
+          </div>
+          <div class="card-body">
+            <p class="eyebrow">Eau de Parfum</p>
+            <h3>Emerald Intense</h3>
+            <p>Resinous cypress needles and incense wrapped around a deep, velvety green agarwood core.</p>
+            <p class="notes">Green Cypress · Incense · Smoked Vetiver</p>
+            <p class="tone">Deep emerald &amp; antique gold</p>
+            <a class="link" href="#notes">Discover Essence <span>→</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section 2: Fragrance Accord Layers -->
+    <section class="section split" id="notes">
+      <div class="split-text">
+        <p class="eyebrow">The Accord</p>
+        <h2>Built in layers.</h2>
+        <div class="layer">
+          <h3>Top Notes</h3>
+          <p class="notes">Italian Bergamot, Saffron Threads, Pink Peppercorn</p>
+          <p>The luminous, fleeting first impression.</p>
+        </div>
+        <div class="layer">
+          <h3>Heart Notes</h3>
+          <p class="notes">Dark Damask Rose, Midnight Jasmine, Amber Resin</p>
+          <p>The emotional core where depth and character unfold.</p>
+        </div>
+        <div class="layer">
+          <h3>Base Notes</h3>
+          <p class="notes">Aged Oud (Agarwood), Tuscan Leather, Smoked Cedar, White Musk</p>
+          <p>The lasting signature that warms against skin.</p>
+        </div>
+      </div>
+      <div class="split-visual">
+        <div class="tilt" id="tilt">
+          <img src="assets/products/product-midnight-oud-hero.png" alt="Midnight Oud Extrait de Parfum, 100 ML" loading="lazy" width="2576" height="1440">
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Signature Masterpiece -->
+    <section class="section signature" id="signature">
+      <div class="sig-img">
+        <img src="assets/products/product-midnight-oud-hero.png" alt="Midnight Oud flacon with hand-beveled glass and gold neck collar" loading="lazy" width="2576" height="1440">
+      </div>
+      <div class="sig-text">
+        <p class="eyebrow">Signature Extrait</p>
+        <h2>Midnight Oud</h2>
+        <p class="lead">A rare, high-concentration formulation where dark velvety rose intertwines with smoked woods, Tuscan leather, and pure agarwood. Formulated to linger long after dark.</p>
+        <ul class="specs">
+          <li><strong>100 ML</strong>Extrait de Parfum</li>
+          <li><strong>30%</strong>Fragrance Concentration</li>
+          <li><strong>Hand-Beveled</strong>Architectural Glass</li>
+          <li><strong>Unisex</strong>Olfactory Profile</li>
+        </ul>
+        <div class="actions">
+          <a class="pill" href="#top">Experience Midnight Oud</a>
+          <a class="textlink" href="#notes">Explore The Accord</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h2 class="wordmark">ASIM SAQLAIN</h2>
+    <p class="tagline">Fragrance After Dark</p>
+    <div class="fcols">
+      <div>
+        <h3>The House</h3>
+        <a href="#top">The Story</a>
+        <a href="#top">Master Perfumer</a>
+        <a href="#top">Craftsmanship</a>
+      </div>
+      <div>
+        <h3>Fragrances</h3>
+        <a href="#signature">Midnight Oud</a>
+        <a href="#collection">Ruby Oud</a>
+        <a href="#collection">Oceanic Edge</a>
+        <a href="#collection">Emerald Intense</a>
+      </div>
+      <div>
+        <h3>Concierge</h3>
+        <a href="#top">Bespoke Consultations</a>
+        <a href="#top">Boutiques</a>
+        <a href="#top">Client Care</a>
+      </div>
+    </div>
+    <blockquote>“Created for the hours between light and memory.”</blockquote>
+    <p class="copy">© 2026 ASIM SAQLAIN. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
